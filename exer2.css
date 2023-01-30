@@ -1,0 +1,40 @@
+/* 일치선택자  */
+p.lion{
+  background-color: red;
+}
+/* 3번 zoo = ul - li  */
+.zoo > ul > .lion{
+  background-color: green;
+}
+ul > .lion{
+  background-color: green;
+}
+ul .lion{
+  background-color: green;
+}
+
+#tiger{
+  background-color: yellow;
+}
+.lion{
+  color: white;
+}
+.zoo .lion{
+  font-weight: bolder;
+}
+
+#tiger + li {
+  background-color: skyblue;
+}
+
+/* #tiger + #pan {
+  background-color: skyblue;
+} */
+
+/* .lion ~ .person{
+  background-color: orange;
+} */
+
+.zoo > ul > .lion ~ li {
+  background-color: orange;
+}

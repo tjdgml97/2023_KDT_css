@@ -1,0 +1,16 @@
+/* • <h1> 태그에 마우스가 올라가면 글자가 빨간색
+• <a> 태그를 클릭 하고 있으면 배경이 파란색
+• <input> 태그 중 하나의 <input> 태그에 포커스가 가면 입력창이 오 렌지색으로 변경 */
+
+h1:hover{
+  color : red;
+}
+
+a:active{
+  background-color: blue;
+}
+
+/* Id 는 유일해서!  */
+#bo:focus{
+  background-color: orange;
+}

@@ -1,0 +1,15 @@
+/* • Disabled 속성을 가진 태그 선택 →배경 빨간색
+• placeholder 속성이 “이름” 값 을 가지는 태그 선택→배경 오 렌지
+• placeholder 속성을 가지지 않 는 태그 선택→배경 파란색 */
+
+[disabled]{
+  background-color: red;
+}
+
+[placeholder="이름"] {
+  background-color: orange;
+}
+
+input:not([placeholder]){
+  background-color: blue;
+}

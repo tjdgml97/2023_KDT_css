@@ -1,0 +1,16 @@
+/* .fruits span:first-child{
+  color: red;
+} */
+
+.fruits p:last-child {
+  color: blue;
+}
+
+.fruits *:nth-child(2n+1) {
+  color:green;
+}
+/* 클래스의 자식 스팬중 첫번째 자식이면 */
+
+.fruits *:not(span) {
+  color: red;
+}

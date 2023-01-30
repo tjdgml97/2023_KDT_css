@@ -1,0 +1,39 @@
+/* • 사자, 재규어, 치타, 하이에나
+선택→배경 오렌지
+• 곰만 선택→배경 보라색
+• 초식 동물만 선택→배경 초록색
+• 하이에나만 선택→배경 빨간색 / 마우스가 올라가면 배경
+• 호랑이만 선택→배경 파란색 */
+
+.zoo *:nth-child(2n) {
+  background-color: orange;
+}
+
+/* zoo div 요소 아래 모든자식들중  */
+.zoo p:first-child{
+  background-color: blueviolet;
+}
+/* 이것도가능 */
+.zoo *:first-child{
+  background-color: blueviolet;
+}
+
+
+.zoo *:not(.predator) {
+  background-color: green;
+}
+
+.zoo *:last-child{
+  background-color: red;
+}
+.zoo *:last-child:hover{
+  background-color: yellow;
+}
+
+.zoo *:nth-child(3){
+  background-color: blue;
+}
+/* 
+.zoo *:nth-child(2n){
+  background-color: orange;
+} */
