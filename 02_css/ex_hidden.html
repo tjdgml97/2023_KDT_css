@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      /* 마우스가 올라가면 클릭모양으로 변함  - 속성체크가능 */
+      background-color:aquamarine;
+      display: inline-block; 
+      /* 가로로쌓임 */
+    }
+    .opacity{
+      background-color: aqua;
+      border-color: black;
+      /* 자리 o 모습 속성 o  */
+      opacity: 1;
+    }
+
+    .visibility {
+      background-color: bisque;
+      /* 자리 o , 모습 속성 x */
+      visibility: hidden;
+    }
+    
+    .display{
+      background-color: violet;
+      /* 자리 x , 속성 x */
+      display: none;
+    }
+
+    .last {
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <div class="opacity">opacity</div>
+  <div class="visibility">visibility</div>
+  <div class="display">display</div>
+  <div class="last">last</div>
+</body>
+</html>
