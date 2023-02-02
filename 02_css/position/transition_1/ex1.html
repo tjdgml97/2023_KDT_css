@@ -7,15 +7,16 @@
   <title>Document</title>
   <style>
     div{
-      width: 200px;
-      height: 200px;
-      background-color: skyblue;
-      display: block;
+      background-color: orange;
+      width: 100px;
+      height: 100px;
+      transition : background-color 1s, width 3s;
+      /* transition-property: ; */
     }
-
-    div:hover{
-      display: none;  
-   }
+    div:active{
+      background-color: dodgerblue;
+      width: 300px;
+    }
   </style>
 </head>
 <body>
