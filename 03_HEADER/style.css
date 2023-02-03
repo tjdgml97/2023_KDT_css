@@ -1,0 +1,153 @@
+/* COMMON */
+body{
+
+}
+a{
+  text-decoration: none;
+  color: #4a4a4a;
+  
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  /* background-color: skyblue; */
+  box-shadow: 0 2px 4px 0 rgba(207 , 207 ,207,0.5);
+
+}
+header .inner{
+  display: flex;
+  width: 1200px;
+  height: 64px;
+  padding: 0 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 로고 파트 */
+header .inner .header__logo {
+  flex-shrink: 0;
+  font-size: 32px;
+}
+header .inner .header__logo a{
+  color: green;
+  font-family: 'Indie Flower', cursive;
+
+}
+header .inner .header__logo a i{}
+
+/* 메뉴파트 */
+header .inner .header__menu {
+  /* flex-grow: 100px;  */
+  /* flex-basis :1000px; */
+  font-size: 16px;
+/* 상속함 */
+
+  display: flex;
+  height: 32px;
+  /* justify-content: space-between; */
+  margin-left: 20px;
+
+
+}
+header .inner .header__menu li {
+    padding : 0 16px;
+    line-height: 32px;
+    /* padding : 8px 16px; */
+      /* flex-grow: 100px;  */
+      /* flex-basis :100px; */
+  /* display: flex;     */
+  /* justify-content: space-between; */
+  /* background-color:black; */
+  /* color: red; */
+}
+header .inner .header__menu li a {
+  /* height: 32px; */
+  color: #4a4a4a;
+  /* display: flex; */
+  /* color: red; */
+}
+header .inner .header__menu li a:hover {
+  color: #1dc078;
+
+  /* display: flex; */
+  /* color: red; */
+}
+/* 공간파트 */
+header .inner .header__space {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+/* 검색파트 */
+header .inner .header__search {
+  margin-right: 30px;
+  position: relative;
+
+  height: 34px;
+  font-size: 16px;
+}
+header .inner .header__search input {
+  box-sizing: border-box;
+  width: 148px;
+  height: 34px;
+  padding : 5px 9px;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  border : none;
+  color: #4a4a4a;
+}
+
+header .inner .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+
+header .inner .header__search input:focus{
+  border: 1px solid #c8c8c8;
+  outline : none;
+  /* outline-color:green; */
+  box-shadow: inset 0px 0px 0 2px #1dc078;
+
+}
+header .inner .header__search i{
+  /* position ab 일떄 수평 - auto margin 줌, 계산을 위해서는 부모요소의 크기. 자기의 크기를 알아야함  */
+  /* 이방법은 좋지 x */
+  /* transform:  translateX(-30px); */
+  position: absolute;
+  right: 9px;
+  margin: auto;
+  /* 높이- 글자상속안되어서 따로 줌  */
+  height: 16px;
+  top: 0;
+  bottom :0; 
+  /*postion ab 수직 정렬 : margin, top0 bottom0 , 수평방법: left,right 0 */
+
+}
+
+/* 로그인 회원가입 */
+header .inner .header__login-join{
+  flex-shrink: 0;
+  display: flex;
+  height: 34px;
+  gap: 10px;
+}
+header .inner .header__login-join .btn{
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+header .inner .header__login-join .btn.btn--login{
+  color: #4a4a4a;
+  background-color: white;
+
+}
+header .inner .header__login-join .btn.btn--join{
+  color: white;
+  background-color: #f77867;
+}
+
+
