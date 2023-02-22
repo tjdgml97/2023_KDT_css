@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.localStorage.setItem("name","psh");
+    console.log(window.localStorage.getItem('name'));
+
+    window.localStorage.setItem("number","1");
+    const number = window.localStorage.getItem('number');
+    console.log(number);
+    console.log(typeof number);
+
+    const inform  =  {
+      name : "psh",
+      isOld : false,
+      hobby : ["1","2","3","4"],
+    }
+
+    // const jsonInform = JSON.stringify(inform);
+    // console.log(jsonInform);
+    // console.log(inform);
+
+    // const objInform = JSON.parse(jsonInform);
+    // console.log('json:',objInform);
+
+    // 데이터는 문자열로만 저장
+    // const jsonInform = JSON.stringify(inform); 
+    // //객체인 inform 를 string 으로 변환 가능 
+    // window.localStorage.setItem('psh',jsonInform);
+
+    // const jsonInfromFromLocal = window.localStorage.getItem();
+    // const objInform = JSON.parse(jsonInfromFromLocal);
+    //json 을 Parse 해서 객체로 변환 
+    // console.log(objInform);
+
+    window.localStorage.setItem('pororo' ,"뽀로로입니다!");
+    console.log(window.localStorage.getItem('pororo'));
+    window.localStorage.removeItem('pororo');
+    console.log(window.localStorage.getItem('pororo'));
+
+    window.localStorage.clear();
+    console.log(window.localStorage);
+
+    window.localStorage.setItem('name','hee');
+    window.localStorage.setItem('pororo',"뽀로로");
+    // const ObjStr = JSON.stringify()
+    console.log(window.localStorage.length);
+    console.log(window.localStorage.key(0));
+    console.log(window.localStorage.key(1));
+    console.log(window.localStorage.key(2));
+
+    window.localStorage.clear();
+    window.localStorage.setItem("name","psh");
+    window.sessionStorage.setItem("pororo" ,"뽀로로");
+
+    //  실습
+    window.localStorage.clear();
+    window.localStorage.setItem("name","sh");
+    window.localStorage.setItem("old","20");
+    window.localStorage.setItem("hobby",["piano","study"]);
+    window.localStorage.setItem("like","choco");
+    window.localStorage.setItem("favoritecolor","green");
+
+    let i=0;
+    for (i=0; i<localStorage.length; i++) {
+      let key = localStorage.key(i);
+      console.log(`Key:${key}`);
+      console.log("Value:",localStorage.getItem(key));
+    }
+
+    console.log(window.localStorage.getItem());
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
